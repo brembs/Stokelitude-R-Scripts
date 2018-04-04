@@ -33,7 +33,7 @@ png(file = "TraceDownsampled.png", width = 1920)
 plot(x = flyTracesDown$Time, y = (flyTracesDown$Right-flyTracesDown$Left), type = "l", main = "Difference in Wingstroke Amplitude, Downsampled", xlab = "Time (sec)", ylab = "Wingstroke Angle Difference")
 png(file = "TraceSlidingAverage.png", width = 1920)
 plot(x = flyTracesSlide$Time, y = (flyTracesSlide$Right - flyTracesSlide$Left), type = "l", main = "Difference in Wingstroke Amplitude, Sliding Average", xlab = "Time (sec)", ylab = "Wingstrole Angle Difference")
-
+#write.csv(flyTracesDown, file = "downsampled.csv")
 
 
 ##### plot an excerpt of the data
